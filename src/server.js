@@ -154,7 +154,7 @@ const runPmdCheck = async (bluecanvas, deploymentNumber, deploymentBranchName) =
 
       await putCheck({
         state: CheckState.DONE,
-        result: CheckResult.FAILURE,
+        result: CheckResult.NEUTRAL,
         description: 'Found some problems.',
         externalUrl: `${process.env.BASE_URL}/pmd-results/${resultId}`,
         externalId: resultId,
